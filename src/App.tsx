@@ -203,7 +203,7 @@ function App() {
       <footer className="mandate-footer">
         <div className="footer-content">
           <p className="serif">Sovereign Mandate Bureau of Information</p>
-          <p>© 342 AF - "Order is Life"</p>
+          <p>© 52 AF - "Order is Life"</p>
         </div>
       </footer>
     </div>
