@@ -1,73 +1,20 @@
-# React + TypeScript + Vite
+# THE SOVEREIGN MANDATE [Bureau of Information]
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+"Order is Life. Loyalty is Oxygen."
 
-Currently, two official plugins are available:
+Welcome to the official communication portal of the Sovereign Mandate. This site provides citizens with essential services and updates regarding the Millennium of Order.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## [ BUREAU OVERVIEW ]
+The Sovereign Mandate remains the primary stabilizing force in the galaxy. We ensure the continued survival of billions through the rigid management of resources and the enforcement of the Caste System.
 
-## React Compiler
+## [ CITIZEN TOOLS ]
+- **Caste Registry:** Secure DNA-based validation for sector assignment and identification.
+- **Oxygen Allocation:** Interactive rationing schedules based on citizen contribution and loyalty tier.
+- **Duty Gallery:** Access to official Mandate propaganda and motivational materials.
+- **Power Rationing:** Real-time alerts regarding grid stability and mandatory blackout periods.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## [ SECURITY NOTICE ]
+Unauthorized breathing outside of assigned flow periods is a Level 2 Infraction. Ensure your DNA signature is current at the nearest Correction Center.
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
+*Ensuring the survival of the stars through discipline, structure, and loyalty.*

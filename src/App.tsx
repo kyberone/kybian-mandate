@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Shield, Users, Wind, Image as LucideImage, ChevronRight, Lock, AlertTriangle, CheckCircle2, XCircle } from 'lucide-react';
+import { Shield, Users, Wind, ChevronRight, Lock, AlertTriangle, CheckCircle2, XCircle } from 'lucide-react';
 import './App.css';
 
 const posters = [
