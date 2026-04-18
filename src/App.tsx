@@ -46,7 +46,7 @@ function App() {
       <nav className="mandate-nav">
         <div className="nav-logo">
           <Shield className="gold-text" size={32} />
-          <span className="serif">Sovereign Mandate</span>
+          <span className="serif gold-text">Sovereign Mandate</span>
         </div>
         <div className="nav-links">
           <a href="#checkpoint">Checkpoint</a>
@@ -214,8 +214,8 @@ function App() {
 
       <footer className="mandate-footer">
         <div className="footer-content">
-          <p className="serif">Sovereign Mandate Bureau of Information</p>
-          <p>© 52 AF - "Order is Life"</p>
+          <p className="serif gold-text">Sovereign Mandate Bureau of Information</p>
+          <p className="gold-text">© 52 AF - "Order is Life"</p>
         </div>
       </footer>
     </div>

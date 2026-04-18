@@ -131,7 +131,7 @@
 .id-card {
   width: 320px;
   background: #f5f5f5;
-  color: #1a1a1a;
+  color: var(--mandate-gold);
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
@@ -163,7 +163,7 @@
 }
 
 .user-icon {
-  color: #666;
+  color: var(--mandate-gold);
   transition: all 0.3s;
 }
 
@@ -173,7 +173,7 @@
 }
 
 @keyframes shimmer-pulse {
-  from { color: #666; filter: drop-shadow(0 0 5px #4a90e2); }
+  from { color: var(--mandate-gold); filter: drop-shadow(0 0 5px #4a90e2); }
   to { color: #4a90e2; filter: drop-shadow(0 0 15px #4a90e2); }
 }
 
@@ -217,7 +217,7 @@
 
 .detail-row .value {
   font-weight: 900;
-  color: #333;
+  color: var(--mandate-gold);
 }
 
 .sector {
@@ -254,7 +254,7 @@
   justify-content: center;
   gap: 8px;
   transition: all 0.2s;
-  color: white;
+  color: var(--mandate-gold);
 }
 
 .btn-decision.approve { background: #2e7d32; }

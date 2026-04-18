@@ -183,7 +183,7 @@ const CitizenCompliance: React.FC = () => {
                   </div>
                 </div>
                 <div className="card-footer">
-                  <span className="serif">LOYALTY_IS_LIFE</span>
+                  <span className="serif gold-text">LOYALTY_IS_LIFE</span>
                 </div>
               </div>
 

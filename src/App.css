@@ -9,7 +9,7 @@
 body {
   margin: 0;
   background-color: var(--mandate-dark);
-  color: var(--mandate-white);
+  color: var(--mandate-gold);
   font-family: 'Inter', sans-serif;
 }
 
@@ -95,7 +95,7 @@ body {
 /* Power Alert */
 .power-alert {
   background: var(--mandate-accent);
-  color: white;
+  color: var(--mandate-gold);
   padding: 10px;
   text-align: center;
   font-size: 0.7rem;
@@ -145,7 +145,7 @@ body {
 .hero-content p {
   font-size: 1.2rem;
   margin-bottom: 30px;
-  color: #fff;
+  color: var(--mandate-gold);
 }
 
 .button-mandate {
@@ -266,7 +266,7 @@ body {
   background: rgba(0, 0, 0, 0.3);
   border: 1px solid rgba(212, 175, 55, 0.3);
   padding: 12px 15px;
-  color: white;
+  color: var(--mandate-gold);
   font-family: inherit;
   width: 100%;
   box-sizing: border-box;
@@ -335,8 +335,8 @@ body {
   box-shadow: 0 0 20px var(--mandate-gold-glow);
 }
 
-.day-name { font-size: 0.8rem; color: #fff; }
-.ration-status { font-weight: bold; }
+.day-name { font-size: 0.8rem; color: var(--mandate-gold); }
+.ration-status { font-weight: bold; color: var(--mandate-gold); }
 
 .flow-meter {
   width: 100%;
@@ -352,7 +352,7 @@ body {
 .disclaimer {
   text-align: center;
   font-size: 0.8rem;
-  color: #fff;
+  color: var(--mandate-gold);
   opacity: 0.8;
   font-style: italic;
 }
