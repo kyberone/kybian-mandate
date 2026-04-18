@@ -23,7 +23,11 @@
   gap: 10px;
   font-size: 0.8rem;
   letter-spacing: 1px;
-  color: var(--mandate-gold);
+  color: var(--mandate-gold) !important;
+}
+
+.header-info span {
+  color: var(--mandate-gold) !important;
 }
 
 .game-stats {
@@ -31,7 +35,11 @@
   gap: 20px;
   font-size: 0.8rem;
   font-weight: bold;
-  color: var(--mandate-gold);
+  color: var(--mandate-gold) !important;
+}
+
+.game-stats .stat-item {
+  color: var(--mandate-gold) !important;
 }
 
 .demerits {
