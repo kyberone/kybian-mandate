@@ -108,8 +108,8 @@ const CitizenCompliance: React.FC = () => {
         </div>
       </div>
 
-      <div className="scanner-view">
         <AnimatePresence mode="wait">
+          {gameState === 'IDLE' && (
             <motion.div 
               key="idle"
               initial={{ opacity: 0 }}
@@ -130,6 +130,7 @@ const CitizenCompliance: React.FC = () => {
               <p>Failure to report infractions will result in immediate demerits.</p>
               <button onClick={startGame} className="button-mandate">Begin Inspection</button>
             </motion.div>
+          )}
 
           {gameState === 'GAMEOVER' && (
             <motion.div 
