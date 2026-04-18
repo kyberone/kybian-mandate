@@ -12,6 +12,7 @@ The Sovereign Mandate remains the primary stabilizing force in the galaxy. We en
 - **Oxygen Allocation:** Interactive rationing schedules based on citizen contribution and loyalty tier.
 - **Duty Gallery:** Access to official Mandate propaganda and motivational materials.
 - **Power Rationing:** Real-time alerts regarding grid stability and mandatory blackout periods.
+- **Citizen Compliance:** Official Bureau inspection sim. Scan incoming ID cards for biological infractions and protocol breaches. (Accessible via Security Checkpoint)
 
 ## [ SECURITY NOTICE ]
 Unauthorized breathing outside of assigned flow periods is a Level 2 Infraction. Ensure your DNA signature is current at the nearest Correction Center.
