@@ -74,16 +74,16 @@ body {
 }
 
 .nav-links a {
-  color: var(--mandate-white);
+  color: var(--mandate-gold);
   text-decoration: none;
   text-transform: uppercase;
   font-size: 0.8rem;
   letter-spacing: 2px;
-  transition: color 0.3s;
+  transition: opacity 0.3s;
 }
 
 .nav-links a:hover {
-  color: var(--mandate-gold);
+  opacity: 0.7;
 }
 
 .hub-link {
@@ -405,6 +405,7 @@ body {
   padding: 50px 20px;
   border-top: 1px solid var(--mandate-gold);
   text-align: center;
+  color: var(--mandate-gold);
 }
 
 /* Responsive */

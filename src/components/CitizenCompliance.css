@@ -23,6 +23,7 @@
   gap: 10px;
   font-size: 0.8rem;
   letter-spacing: 1px;
+  color: var(--mandate-gold);
 }
 
 .game-stats {
@@ -30,6 +31,7 @@
   gap: 20px;
   font-size: 0.8rem;
   font-weight: bold;
+  color: var(--mandate-gold);
 }
 
 .demerits {
@@ -77,7 +79,7 @@
   font-size: 0.9rem;
   line-height: 1.6;
   margin-bottom: 30px;
-  color: #fff;
+  color: var(--mandate-gold);
 }
 
 .final-score {
@@ -179,7 +181,7 @@
 
 .detail-row .label {
   font-weight: bold;
-  color: #555;
+  color: var(--mandate-gold);
   width: 40px;
 }
 
