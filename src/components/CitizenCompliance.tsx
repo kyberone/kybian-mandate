@@ -108,6 +108,7 @@ const CitizenCompliance: React.FC = () => {
         </div>
       </div>
 
+      <div className="scanner-view">
         <AnimatePresence mode="wait">
           {gameState === 'IDLE' && (
             <motion.div 
