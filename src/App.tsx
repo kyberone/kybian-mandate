@@ -15,6 +15,7 @@ function App() {
   const [validationStatus, setValidationStatus] = useState<'idle' | 'validating' | 'success' | 'error'>('idle');
   const [powerFlicker, setPowerFlicker] = useState(false);
   const [selectedDay, setSelectedDay] = useState(2); // Wednesday
+  const [isGameOpen, setIsGameOpen] = useState(false);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -49,7 +50,7 @@ function App() {
           <span className="serif gold-text">Sovereign Mandate</span>
         </div>
         <div className="nav-links">
-          <a href="#checkpoint">Checkpoint</a>
+          <button onClick={() => setIsGameOpen(true)} className="nav-game-btn">Checkpoint</button>
           <a href="#registry">Registry</a>
           <a href="#rationing">Rationing</a>
           <a href="#gallery">Duty</a>
@@ -84,11 +85,19 @@ function App() {
         <section id="checkpoint" className="checkpoint-section">
           <div className="section-header">
             <Search className="gold-text" size={40} />
-            <h2 className="serif">Security Checkpoint</h2>
+            <h2 className="serif gold-text">Security Checkpoint</h2>
             <p className="subtitle">Official Bureau of Compliance Monitoring Terminal</p>
           </div>
-          <CitizenCompliance />
+          <div className="checkpoint-access-card gold-border">
+             <Shield size={48} className="gold-text mb-20" />
+             <h3 className="serif gold-text">Access Verification Required</h3>
+             <p className="gold-text">Mandatory shift for all Sector 7 Tier-2 citizens. Unauthorized avoidance is a Level 3 Infraction.</p>
+             <button onClick={() => setIsGameOpen(true)} className="button-mandate">
+               INITIALIZE_BIO_SCANNER
+             </button>
+          </div>
         </section>
+
 
         {/* Caste Registry Section */}
         <section id="registry" className="registry-section">
@@ -218,6 +227,29 @@ function App() {
           <p className="gold-text">© 52 AF - "Order is Life"</p>
         </div>
       </footer>
+
+      <AnimatePresence>
+        {isGameOpen && (
+          <motion.div 
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            className="game-modal-overlay"
+          >
+            <motion.div 
+              initial={{ scale: 0.9, y: 20 }}
+              animate={{ scale: 1, y: 0 }}
+              exit={{ scale: 0.9, y: 20 }}
+              className="game-modal-content"
+            >
+              <button className="modal-close gold-text serif" onClick={() => setIsGameOpen(false)}>
+                [ EXIT_TERMINAL ]
+              </button>
+              <CitizenCompliance />
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </div>
   );
 }
