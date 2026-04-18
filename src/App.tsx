@@ -81,24 +81,6 @@ function App() {
       </section>
 
       <main className="mandate-main">
-        {/* Compliance Game Section */}
-        <section id="checkpoint" className="checkpoint-section">
-          <div className="section-header">
-            <Search className="gold-text" size={40} />
-            <h2 className="serif gold-text">Security Checkpoint</h2>
-            <p className="subtitle">Official Bureau of Compliance Monitoring Terminal</p>
-          </div>
-          <div className="checkpoint-access-card gold-border">
-             <Shield size={48} className="gold-text mb-20" />
-             <h3 className="serif gold-text">Access Verification Required</h3>
-             <p className="gold-text">Mandatory shift for all Sector 7 Tier-2 citizens. Unauthorized avoidance is a Level 3 Infraction.</p>
-             <button onClick={() => setIsGameOpen(true)} className="button-mandate">
-               INITIALIZE_BIO_SCANNER
-             </button>
-          </div>
-        </section>
-
-
         {/* Caste Registry Section */}
         <section id="registry" className="registry-section">
           <div className="section-header">
@@ -217,6 +199,23 @@ function App() {
                 </div>
               </motion.div>
             ))}
+          </div>
+        </section>
+
+        {/* Compliance Game Section */}
+        <section id="checkpoint" className="checkpoint-section">
+          <div className="section-header">
+            <Search className="gold-text" size={40} />
+            <h2 className="serif gold-text">Security Checkpoint</h2>
+            <p className="subtitle">Official Bureau of Compliance Monitoring Terminal</p>
+          </div>
+          <div className="checkpoint-access-card gold-border">
+             <Shield size={48} className="gold-text mb-20" />
+             <h3 className="serif gold-text">Access Verification Required</h3>
+             <p className="gold-text">Mandatory shift for all Sector 7 Tier-2 citizens. Unauthorized avoidance is a Level 3 Infraction.</p>
+             <button onClick={() => setIsGameOpen(true)} className="button-mandate">
+               INITIALIZE_BIO_SCANNER
+             </button>
           </div>
         </section>
       </main>
