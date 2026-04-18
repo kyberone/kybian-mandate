@@ -110,7 +110,6 @@ const CitizenCompliance: React.FC = () => {
 
       <div className="scanner-view">
         <AnimatePresence mode="wait">
-          {gameState === 'IDLE' && (
             <motion.div 
               key="idle"
               initial={{ opacity: 0 }}
@@ -118,11 +117,19 @@ const CitizenCompliance: React.FC = () => {
               exit={{ opacity: 0 }}
               className="game-overlay"
             >
-              <h3 className="serif gold-text">Checkpoint 7-B</h3>
-              <p>Scan incoming IDs. Ensure they are valid, within their assigned sector, and free of the Shimmer-Skin infection.</p>
+              <h3 className="serif gold-text">Station Checkpoint 7-B</h3>
+              <div className="compliance-guide gold-border serif">
+                <h4>VERIFICATION PROTOCOL v42:</h4>
+                <ul>
+                  <li>• ID PREFIX: MUST START WITH [ SM- ]</li>
+                  <li>• EXPIRATION: MUST BE AFTER [ 51 AF ]</li>
+                  <li>• CASTE: MUST MATCH SECTOR COLOR</li>
+                  <li>• BIO-SCAN: HOVER FOR [ SHIMMER-SKIN ]</li>
+                </ul>
+              </div>
+              <p>Failure to report infractions will result in immediate demerits.</p>
               <button onClick={startGame} className="button-mandate">Begin Inspection</button>
             </motion.div>
-          )}
 
           {gameState === 'GAMEOVER' && (
             <motion.div 
