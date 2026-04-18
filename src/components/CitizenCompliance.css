@@ -70,6 +70,7 @@
 .game-overlay h3 {
   font-size: 2rem;
   margin-bottom: 15px;
+  color: var(--mandate-gold);
 }
 
 .game-overlay p {
