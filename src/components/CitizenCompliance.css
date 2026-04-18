@@ -76,7 +76,7 @@
   font-size: 0.9rem;
   line-height: 1.6;
   margin-bottom: 30px;
-  opacity: 0.8;
+  color: #fff;
 }
 
 .final-score {
@@ -178,7 +178,7 @@
 
 .detail-row .label {
   font-weight: bold;
-  color: #999;
+  color: #555;
   width: 40px;
 }
 

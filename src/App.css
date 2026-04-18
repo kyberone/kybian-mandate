@@ -144,7 +144,7 @@ body {
 .hero-content p {
   font-size: 1.2rem;
   margin-bottom: 30px;
-  opacity: 0.9;
+  color: #fff;
 }
 
 .button-mandate {
@@ -197,7 +197,7 @@ body {
   font-size: 0.8rem;
   text-transform: uppercase;
   letter-spacing: 2px;
-  opacity: 0.6;
+  color: var(--mandate-gold);
   margin-top: 0;
 }
 
@@ -225,7 +225,7 @@ body {
   font-size: 0.7rem;
   letter-spacing: 2px;
   margin-bottom: 30px;
-  opacity: 0.7;
+  color: var(--mandate-gold);
 }
 
 .registry-form {
@@ -333,7 +333,7 @@ body {
   box-shadow: 0 0 20px var(--mandate-gold-glow);
 }
 
-.day-name { font-size: 0.8rem; opacity: 0.7; }
+.day-name { font-size: 0.8rem; color: #fff; }
 .ration-status { font-weight: bold; }
 
 .flow-meter {
@@ -350,7 +350,8 @@ body {
 .disclaimer {
   text-align: center;
   font-size: 0.8rem;
-  opacity: 0.6;
+  color: #fff;
+  opacity: 0.8;
   font-style: italic;
 }
 
