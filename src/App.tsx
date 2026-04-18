@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Shield, Users, Wind, ChevronRight, Lock, AlertTriangle, CheckCircle2, XCircle, Image as LucideImage } from 'lucide-react';
+import { Shield, Users, Wind, ChevronRight, Lock, AlertTriangle, CheckCircle2, XCircle, Image as LucideImage, Search } from 'lucide-react';
+import CitizenCompliance from './components/CitizenCompliance';
 import './App.css';
 
 const posters = [
@@ -48,6 +49,7 @@ function App() {
           <span className="serif">Sovereign Mandate</span>
         </div>
         <div className="nav-links">
+          <a href="#checkpoint">Checkpoint</a>
           <a href="#registry">Registry</a>
           <a href="#rationing">Rationing</a>
           <a href="#gallery">Duty</a>
@@ -72,12 +74,22 @@ function App() {
           <h1 className="serif">The Millennium of Order</h1>
           <p>Ensuring the survival of the stars through discipline, structure, and loyalty.</p>
           <div className="hero-actions">
-            <a href="#registry" className="button-mandate">Enter the Registry</a>
+            <a href="#checkpoint" className="button-mandate">Station Checkpoint</a>
           </div>
         </motion.div>
       </section>
 
       <main className="mandate-main">
+        {/* Compliance Game Section */}
+        <section id="checkpoint" className="checkpoint-section">
+          <div className="section-header">
+            <Search className="gold-text" size={40} />
+            <h2 className="serif">Security Checkpoint</h2>
+            <p className="subtitle">Official Bureau of Compliance Monitoring Terminal</p>
+          </div>
+          <CitizenCompliance />
+        </section>
+
         {/* Caste Registry Section */}
         <section id="registry" className="registry-section">
           <div className="section-header">
